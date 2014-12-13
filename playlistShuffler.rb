@@ -8,8 +8,9 @@ The equivalent to shuffling any playlist/library in iTunes or Banshee.
 Except you are given the entire list, not just the next 10/20/30 songs in the list.
 Because some people might want to know what the entire play order is.
 
-Only extended m3u files are accepted right now. For now, the program assumes the m3u is already valid. 
-Actual extended m3u validation may be implemented at a later date.
+Only extended m3u files are accepted right now. For now, the script only assumes the m3u is valid
+if there is a "#EXTM3U" as the first line, which is required.
+Stricter extended m3u validation may be added in the future.
 
 Command line format: ruby playlistShuffler.rb [input.m3u] [optionalOutputName.m3u]
 

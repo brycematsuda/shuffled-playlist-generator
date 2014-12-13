@@ -8,7 +8,7 @@ Because some people might want to know what the entire play order is to stop at 
 
 Formats supported
 ============================
-Only .m3u files are accepted right now. For now, the program assumes the m3u is already valid, formatted as shown:
+Only extended m3u files are accepted right now. For now, the script only assumes the m3u is valid if there is a "#EXTM3U" as the first line, which is required.
 
 ```sh
 #EXTM3U
@@ -20,7 +20,7 @@ C:\Documents and Settings\I\My Music\Greatest Hits\Example.ogg
 ...
 ```
 
-Actual .m3u validation may be implemented at a later date.
+Stricter extended m3u validation may be added in the future.
 
 Usage
 ===========================
